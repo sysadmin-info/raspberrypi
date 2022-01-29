@@ -30,7 +30,7 @@ npm install -g pm2@latest
 # update npm
 npm update
 
-sudo npm update uuid@latest
+npm update uuid@latest
 
 # Start and enable pm2 startup service and check the status
 sudo systemctl start pm2-pi.service
