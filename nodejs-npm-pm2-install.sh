@@ -24,13 +24,19 @@ npm -v
 
 npm config set fund false --global
 
-#install pm2 latest
+#install pm2 latest package
 npm install -g pm2@latest
 
-# update npm
-npm update
+#perform an upgrade to version 8.4.0
+npm install -g npm@8.4.0
+npm audit fix
+npm audit
 
+#install uuid latest package
 npm update uuid@latest
+
+# update npm to check is everything updated
+npm update
 
 # Start and enable pm2 startup service and check the status
 sudo systemctl start pm2-pi.service
