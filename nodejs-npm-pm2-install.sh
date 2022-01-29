@@ -49,3 +49,5 @@ user="$(getent passwd $( /usr/bin/id -u ) | cut -d: -f1)"
 sudo env PATH=$PATH:/$homedir/.nvm/versions/node/v16.13.2/bin /$homedir/.nvm/versions/node/v16.13.2/lib/node_modules/pm2/bin/pm2 startup systemd -u $user --hp $homedir
 sudo systemctl start pm2-pi.service
 sudo systemctl enable pm2-pi.service
+# recommended reboot after the installation
+sudo reboot
