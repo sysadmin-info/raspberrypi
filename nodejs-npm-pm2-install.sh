@@ -39,5 +39,7 @@ npm update uuid@latest
 npm update
 
 # Start and enable pm2 startup service and check the status
+pm2 status
+sudo env PATH=$PATH:/home/pi/.nvm/versions/node/v16.13.2/bin /home/pi/.nvm/versions/node/v16.13.2/lib/node_modules/pm2/bin/pm2 startup systemd -u pi --hp /home/pi
 sudo systemctl start pm2-pi.service
 sudo systemctl enable pm2-pi.service
